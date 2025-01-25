@@ -27,6 +27,7 @@
   }
   
   .social-login {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -94,9 +95,9 @@
     height: 20px;
   }
   .submit-btn {
-    width: 100%;
+    width: 104%;
     padding: 10px;
-    background-color: #6c63ff;
+    background-color: rgb(60,48,255,1);
     color: white;
     border: none;
     border-radius: 4px;
@@ -118,10 +119,11 @@
   .carousel-container {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    
     align-items: center;
-    background-color: #f8f9fa;
+    background-color:  rgba(60,48,255,0.6);;
   }
   
   .carousel {
@@ -147,13 +149,15 @@
     border-radius: 50%;
     margin-bottom: 15px;
   }
-  
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
+  .carousel-image-placeholder img{
     width: 100px;
-    margin-top: 20px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 15px;
   }
+  
+ 
   
   .carousel-controls button {
     background: none;

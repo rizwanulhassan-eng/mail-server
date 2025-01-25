@@ -1,81 +1,76 @@
 <div class="container">
     <!-- Left Side: Login Form -->
     <div class="form-container">
-      <h2 class="form-title">Sign In</h2>
-      <p class="form-subtitle">Welcome back Jhon!</p>
-  
-      <div class="social-login">
-        <button type="button" class="google-btn">
-          <i class="fab fa-google"></i> Sign in with Google
-        </button>
-        <button type="button" class="social-btn">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button type="button" class="social-btn">
-          <i class="fab fa-twitter"></i>
-        </button>
-      </div>
-  
-      <div class="divider">OR</div>
-  
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
-        <div class="form-group">
-          <label for="username">User Name</label>
-          <input
-            type="text"
-            id="username"
-            formControlName="username"
-            placeholder="user name"
-          />
+        <h2 class="form-title">Sign In</h2>
+        <p class="form-subtitle">Welcome back Jhon!</p>
+
+        <div class="social-login">
+            <button type="button" class="google-btn">
+                <i class="fab fa-google"></i> Sign in with Google
+            </button>
+            <button type="button" class="social-btn">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="social-btn">
+                <i class="fab fa-twitter"></i>
+            </button>
         </div>
-        <div class="form-group">
-          <div class="password-label">
-            <label for="password">Password</label>
-            <a href="#" class="forgot-password">Forget password?</a>
-          </div>
-          <input
-            type="password"
-            id="password"
-            formControlName="password"
-            placeholder="password"
-          />
-          
-        </div>
-        <div class="form-group remember-password">
-          <input type="checkbox" id="remember" formControlName="remember" />
-          <label for="remember">Remember password?</label>
-        </div>
-        <button type="submit" class="submit-btn">Sign In</button>
-      </form>
-  
-      <p class="signup-link">
-        Don't have an account? <a href="#">Sign Up</a>
-      </p>
+
+        <div class="divider">OR</div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" formControlName="username" placeholder="user name" />
+            </div>
+            <div class="form-group">
+                <div class="password-label">
+                    <label for="password">Password</label>
+                    <a href="#" class="forgot-password">Forget password?</a>
+                </div>
+                <input type="password" id="password" formControlName="password" placeholder="password" />
+
+            </div>
+            <div class="form-group remember-password">
+                <input type="checkbox" id="remember" formControlName="remember" />
+                <label for="remember">Remember password?</label>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+
+        <p class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </p>
     </div>
-  
+
     <!-- Right Side: Carousel -->
     <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item active">
-          <div class="carousel-image-placeholder"></div>
-          <h3>Sign In</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsa eligendi
-            expedita aliquam quae.
-          </p>
+        <div class="carousel-controls">
+            <button (click)="prevSlide()">❮</button>
         </div>
-        <div class="carousel-item">
-          <div class="carousel-image-placeholder"></div>
-          <h3>Discover</h3>
-          <p>
-            Porro rem voluptatem possimus, ad, autem quae culpa architecto.
-          </p>
+        <div class="carousel">
+            <div class="carousel-item active">
+                <div class="carousel-image-placeholder">
+                    <img src="../../assets/baner-right-image-02.jpg" alt="Dinosaur" />
+                </div>
+                <h3>Sign In</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsa eligendi
+                    expedita aliquam quae.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image-placeholder">
+                    <img src="../../assets/baner-right-image-02.jpg" alt="Dinosaur" />
+                </div>
+                <h3>Discover</h3>
+                <p>
+                    Porro rem voluptatem possimus, ad, autem quae culpa architecto.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="carousel-controls">
-        <button (click)="prevSlide()">❮</button>
-        <button (click)="nextSlide()">❯</button>
-      </div>
+        <div class="carousel-controls">
+            <button (click)="nextSlide()">❯</button>
+        </div>
     </div>
-  </div>
-  
+</div>
